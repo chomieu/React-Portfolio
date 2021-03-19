@@ -2,11 +2,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
-  <header
+const Footer = ({ siteTitle }) => (
+  <footer
     style={{
       background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
     }}
   >
     <div
@@ -16,7 +15,10 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      © {new Date().getFullYear()}, Built with
+          {` `}
+      <a href="https://www.gatsbyjs.com">Gatsby</a>
+      {/* <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,17 +28,9 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h1> */}
     </div>
-  </header>
+  </footer>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Footer
