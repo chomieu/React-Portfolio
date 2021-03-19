@@ -43,14 +43,14 @@ export default function Title() {
             setTimeout(() => {
               typewriter
                 .pasteString("> ")
-                .typeString("Full-stack Developer")
+                .typeString("JavaScript Developer")
                 .pauseFor(2500)
                 .deleteChars(20)
-                .typeString("Frontend Engineer")
+                .typeString("Front End Engineer")
                 .pauseFor(2500)
                 .deleteChars(17)
                 .start()
-            }, 4500)
+            }, 4000)
           }}
         />
       </Font>
