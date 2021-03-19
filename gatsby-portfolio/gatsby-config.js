@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Chomkan Usaneerungrueng`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Portfolio built with Gatsby (React, GraphQL, Webpack)`,
+    author: `Chomie`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,13 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `page-icon`,
+        short_name: `page-icon`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/unicorn.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/CU-logo.png`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
