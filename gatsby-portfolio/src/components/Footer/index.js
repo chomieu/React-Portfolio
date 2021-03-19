@@ -1,19 +1,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import "./index.css"
 
 const Footer = ({ siteTitle }) => (
-  <footer
-    style={{
-      background: `rebeccapurple`,
+  <footer style={{ borderTop: "1px solid black" }}>
+    <div style={{
+      padding: `1.45rem 1.0875rem`,
     }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
     >
       © {new Date().getFullYear()}, Built with
           {` `}

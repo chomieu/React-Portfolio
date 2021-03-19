@@ -1,31 +1,35 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import Text from "react-font"
+import Font from "react-font"
+import Hamburger from "../Hamburger"
+import Menu from "../Menu"
 import { Link } from "gatsby"
-import "./index.css"
 
 function Header({ siteTitle }) {
-  const [menuIcon, setMenuIcon] = useState("")
+  const [bun, setBun] = useState("")
+  const [drop, setDrop] = useState()
 
-  const menuToggler = () => {
-    menuIcon.length === 0 ? setMenuIcon("change") : setMenuIcon("")
+  const bunToggler = () => {
+    bun.length === 0 ? setBun("change") : setBun("")
   }
 
+  useEffect(() => {
+    drop === "0%" ? setDrop("100%") : setDrop("0%")
+  }, [bun])
+
   return (
-    <header style={{ borderBottom: "1px solid black" }}>
+    <header style={{ borderBottom: "1px solid black", }}>
+      <Menu drop={drop} />
       <div style={{
         padding: `1.45rem 0.5rem`,
         display: "flex",
         justifyContent: "space-between"
       }}
       >
-        <Text family="Francois One">
+        <Font family="Oxanium" weight={600}>
           <Link to="/">{siteTitle}</Link>
-        </Text>
-        <div className={`hamburger ${menuIcon}`} onClick={menuToggler}>
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-        </div>
+        </Font>
+        <Hamburger bun={bun} bunToggler={bunToggler} />
       </div>
     </header>
   )

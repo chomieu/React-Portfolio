@@ -2,10 +2,29 @@ module.exports = {
   siteMetadata: {
     title: `Chomkan Usaneerungrueng`,
     description: `Portfolio built with Gatsby (React, GraphQL, Webpack)`,
-    author: `Chomie`,
+    url: 'https://chomieu.com',
+    author: `@chomieu`,
+    social: [
+      {
+        title: 'GitHub',
+        link: 'https://github.com/chomieu',
+      },
+      {
+        title: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/chomieu',
+      },
+    ],
+    projects: [
+      {
+        title: '',
+        description: '',
+        image: '',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -19,11 +38,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `page-icon`,
-        short_name: `page-icon`,
+        name: `chomkan-usaneerungrueng`,
+        short_name: `cu`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/CU-logo.png`,
       },

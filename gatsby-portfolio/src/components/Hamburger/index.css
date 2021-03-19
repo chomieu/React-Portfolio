@@ -1,6 +1,7 @@
 .hamburger {
   display: inline-block;
   cursor: pointer;
+  z-index: 3;
 }
 
 .bar1, .bar2 {
