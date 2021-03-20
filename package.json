@@ -1,61 +1,51 @@
 {
-  "name": "react-portfolio",
-  "version": "0.1.0",
+  "name": "chomkan-usaneerungrueng",
   "private": true,
-  "homepage": "https://chomieu.com",
+  "description": "Portfolio built with Gatsby (React, GraphQL, Webpack)",
+  "version": "0.1.0",
+  "author": "Chomkan Usaneerungrueng <chomieu@gmail.com>",
   "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "gh-pages": "^3.1.0",
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-gatsby-cloud": "^2.0.0",
+    "gatsby-plugin-image": "^1.0.0",
+    "gatsby-plugin-manifest": "^3.0.0",
+    "gatsby-plugin-offline": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-sass": "^4.1.0",
+    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "react-awesome-slider": "^4.1.0",
-    "react-bootstrap": "^1.5.0",
     "react-dom": "^17.0.1",
     "react-font": "^1.2.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "react-scroll-wheel-handler": "^2.0.1",
-    "react-tsparticles": "^1.18.12",
-    "styled-components": "^5.2.1",
+    "react-helmet": "^6.1.0",
     "typewriter-effect": "^2.17.0"
   },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "",
-  "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chomieu/React-Portfolio.git"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-default.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chomieu/React-Portfolio/issues"
-  }
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-default#readme",
+  "main": "gatsby-config.js"
 }

@@ -1,0 +1,30 @@
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 2;
+  outline: none;
+  
+  .bar1, .bar2 {
+    width: 30px;
+    height: 3px;
+    background-color: #818181;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+}
+.change {
+
+  .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-1.5px, 1.5px);
+    transform: rotate(-45deg) translate(-1.5px, 1.5px);
+  }
+
+  .bar2 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+}
+
+
