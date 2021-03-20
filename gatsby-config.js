@@ -24,6 +24,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://chomieu.com',
+        sitemap: 'https://chomieu.com/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '/' }]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {

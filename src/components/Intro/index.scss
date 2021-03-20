@@ -1,0 +1,48 @@
+.contents {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .cartoonIcon {
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .Typewriter {
+    margin: 2vw auto;
+    font: clamp(20px, 7vw, 45px) "Times New Roman";
+    line-height: 1.5;
+    text-align: center;
+    width: 95%;
+    height: clamp(90px, 31.5vw, 202.5px);
+    
+    &__cursor {
+      animation: disappear 0.5s linear forwards;
+      animation-delay: 4.5s;
+
+    @keyframes disappear {
+      to {
+        opacity: 0;
+      }
+    }
+    }
+  }
+
+  button {
+    opacity: 0;
+    text-transform: capitalize;
+    animation: appear 1s linear forwards;
+    animation-delay: 4.5s;
+
+    @keyframes appear {
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

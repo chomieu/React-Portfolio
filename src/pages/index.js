@@ -1,38 +1,40 @@
 import * as React from "react"
-import Font from "react-font"
-import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Typewriter from "typewriter-effect"
+import IndexPage from "../components/Intro"
+import Portfolio from "./portfolio"
+import About from "./about"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import "./index.scss"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <section className="contents">
-      <Typewriter
-        options={{ delay: 55 }}
-        onInit={(typewriter) => {
-          typewriter.start()
-            .typeString(`Hi there, I'm Chomie.<br/>A JavaScript developer<br/>based in Seattle.<br/>`)
-        }}
-      />
-      <Link to="portfolio">
-        <img alt="down-icon" className="downIcon" src="https://i.imgur.com/q2jKiGg.png" />
-      </Link>
-      <Font family="Oxanium" weight={600}>View Portfolio</Font>
-    </section>
-    {/* <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    /> */}
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
-  </Layout>
-)
+  return (
+    <>
+      <IndexPage />
+      <Header siteTitle={data.site.siteMetadata?.title || `Chomie`} />
+      <Portfolio>
+        <main>{children}</main>
+      </Portfolio>
+      <About />
+      <Footer />
+    </>
+  )
+}
 
-export default IndexPage
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout

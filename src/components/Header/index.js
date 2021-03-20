@@ -4,6 +4,7 @@ import Font from "react-font"
 import Hamburger from "../Hamburger"
 import Menu from "../Menu"
 import { Link } from "gatsby"
+import "./index.scss"
 
 function Header({ siteTitle }) {
   const [bun, setBun] = useState("")
@@ -17,7 +18,7 @@ function Header({ siteTitle }) {
   return (
     <header style={{ borderBottom: "1px solid black", }}>
       <Menu drop={drop} />
-      <div style={{
+      <nav style={{
         padding: `1.45rem 0.5rem`,
         display: "flex",
         justifyContent: "space-between"
@@ -27,7 +28,7 @@ function Header({ siteTitle }) {
           <Link to="/">{siteTitle}</Link>
         </Font>
         <Hamburger bun={bun} bunToggler={bunToggler} />
-      </div>
+      </nav>
     </header>
   )
 }
