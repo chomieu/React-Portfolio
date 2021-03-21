@@ -5,7 +5,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Hamburger from "../Hamburger"
 import Menu from "../Menu"
-import Font from "react-font"
+if (typeof window !== `undefined`) {
+  import Font from "react-font"
+}
 import "./index.scss"
 
 export default function Header({ siteAuthor }) {

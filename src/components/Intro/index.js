@@ -3,7 +3,9 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Typewriter from "typewriter-effect"
-import Font from "react-font"
+if (typeof window !== `undefined`) {
+  import Font from "react-font"
+}
 import { Button } from "@material-ui/core"
 import "./index.scss"
 
@@ -33,7 +35,7 @@ export default function IntroPage() {
           weight={600}
         >
           View Portfolio
-    </Font>
+        </Font>
       </Button>
     </section>
   )

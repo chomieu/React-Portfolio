@@ -1,6 +1,8 @@
 import React from "react"
 
-import Font from "react-font"
+if (typeof window !== `undefined`) {
+  import Font from "react-font"
+}
 import { Grid } from "@material-ui/core"
 import "./index.scss"
 
