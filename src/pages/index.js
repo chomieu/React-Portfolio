@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Intro from "../components/Intro"
-// import About from "./about"
+// import About from "../components/About"
 import Header from "../components/Header"
 import Projects from "../components/Projects"
 import Footer from "../components/Footer"
