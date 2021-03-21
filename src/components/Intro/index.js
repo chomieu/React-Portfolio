@@ -2,6 +2,7 @@ import * as React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { StaticImage } from "gatsby-plugin-image"
 
+import loadable from '@loadable/component'
 import Typewriter from "typewriter-effect"
 import { Button } from "@material-ui/core"
 import "./index.scss"

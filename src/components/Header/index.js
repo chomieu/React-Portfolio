@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import loadable from '@loadable/component'
 import Hamburger from "../Hamburger"
 import Menu from "../Menu"
 import "./index.scss"
