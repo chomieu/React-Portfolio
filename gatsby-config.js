@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Chomkan Usaneerungrueng`,
-    description: `Portfolio built with Gatsby (React, GraphQL, Webpack)`,
+    title: `Portfolio`,
+    description: `Built with Gatsby`,
     url: 'https://chomieu.com',
-    author: `@chomieu`,
+    author: `Chomkan Usaneerungrueng`,
     social: [
       {
         title: 'GitHub',
@@ -16,9 +16,46 @@ module.exports = {
     ],
     projects: [
       {
-        title: '',
-        description: '',
-        image: '',
+        title: 'Meets',
+        description: 'A social media platform with conversational AI integration. The AI recognizes and responds to specific intents, allowing users to query for their connections’ events through speech or text messaging feature.',
+        image: `./meets.gif`,
+        github: '',
+        repository: '',
+      },
+      {
+        title: 'Animal Quiz',
+        description: '.',
+        image: `./animal-quiz.jpg`,
+        github: '',
+        repository: '',
+      },
+      {
+        title: 'Voicely',
+        description: 'An online notepad with 19 color themes, Speech-to-Text, Speech-to-Emoji, and SMS forwarding features.',
+        image: `./meets.gif`,
+        github: '',
+        repository: '',
+      },
+      {
+        title: 'Radcats Karaoke',
+        description: 'A full-featured karaoke application that allows for customization of lyrics and timing, provides a hub for multiuser live sessions, dynamically loads contents, and incorporates gaming as well as 3D elements for fun and interactive experience.',
+        image: `./meets.gif`,
+        github: '',
+        repository: '',
+      },
+      {
+        title: 'Meets',
+        description: 'A social media platform with conversational AI integration. The AI recognizes and responds to specific intents, allowing users to query for their connections’ events through speech or text messaging feature.',
+        image: `./meets.gif`,
+        github: '',
+        repository: '',
+      },
+      {
+        title: 'Meets',
+        description: 'A social media platform with conversational AI integration. The AI recognizes and responds to specific intents, allowing users to query for their connections’ events through speech or text messaging feature.',
+        image: `./meets.gif`,
+        github: '',
+        repository: '',
       },
     ],
   },

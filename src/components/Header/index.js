@@ -1,12 +1,13 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import Font from "react-font"
+import { Link } from "gatsby"
+
 import Hamburger from "../Hamburger"
 import Menu from "../Menu"
-import { Link } from "gatsby"
+import Font from "react-font"
 import "./index.scss"
 
-function Header({ siteTitle }) {
+function Header({ siteAuthor }) {
   const [bun, setBun] = useState("")
   const [drop, setDrop] = useState("0%")
 
@@ -25,7 +26,7 @@ function Header({ siteTitle }) {
       }}
       >
         <Font family="Oxanium" weight={600}>
-          <Link to="/">{siteTitle}</Link>
+          <Link to="/">{siteAuthor}</Link>
         </Font>
         <Hamburger bun={bun} bunToggler={bunToggler} />
       </nav>

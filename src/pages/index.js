@@ -2,10 +2,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import IndexPage from "../components/Intro"
-import Portfolio from "./portfolio"
+import Intro from "../components/Intro"
 import About from "./about"
 import Header from "../components/Header"
+import Projects from "../components/Projects"
 import Footer from "../components/Footer"
 import "./index.scss"
 
@@ -14,7 +14,8 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          author
+          description
         }
       }
     }
@@ -22,13 +23,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <IndexPage />
-      <Header siteTitle={data.site.siteMetadata?.title || `Chomie`} />
-      <Portfolio>
+      <Intro />
+      <Header siteAuthor={data.site.siteMetadata?.author || `Chomie`} />
+      <Projects>
         <main>{children}</main>
-      </Portfolio>
+      </Projects>
       <About />
-      <Footer />
+      <Footer siteDescription={data.site.siteMetadata?.description || `Built by Chomie`}/>
     </>
   )
 }

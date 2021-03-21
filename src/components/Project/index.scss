@@ -1,0 +1,17 @@
+$width: max(640px, );
+
+.project {
+  img {
+    width: $width;
+    height: auto;
+    // border: 1px solid black;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  figcaption {
+    width: $width;
+  }
+}

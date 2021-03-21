@@ -2,15 +2,13 @@ import * as React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { StaticImage } from "gatsby-plugin-image"
 
-import SEO from "../seo"
 import Typewriter from "typewriter-effect"
-import { Button } from "@material-ui/core"
 import Font from "react-font"
+import { Button } from "@material-ui/core"
 import "./index.scss"
 
 const IntroPage = () => (
-  <section className="contents">
-    <SEO title="Home" />
+  <section className="intro">
     <StaticImage
       alt="cartoon-icon"
       className="cartoonIcon"
@@ -18,14 +16,14 @@ const IntroPage = () => (
       placeholder="blurred"
     />
     <Typewriter
-      options={{ delay: 55 }}
+      options={{ delay: 50 }}
       onInit={(typewriter) => {
         typewriter.start()
           .typeString(`Hi there, I'm Chomie.<br/>A JavaScript developer<br/>based in Seattle.`)
       }}
     />
     <Button 
-      onClick={() => scrollTo("header")}
+      onClick={() => scrollTo(".projects")}
       variant="outlined"
       size="large"
     >
