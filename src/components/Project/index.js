@@ -5,14 +5,16 @@ import "./index.scss"
 
 export default function Project({ project }) {
   return (
-    <Grid 
-      item 
-      className="project" 
+    <Grid
+      item
+      className="project"
     >
-      <img
-        alt={`${project.title}-preview`}
-        src={project.image}
-      />
+      <a href={project.github}>
+        <img
+          alt={`${project.title}-preview`}
+          src={project.image}
+        />
+      </a>
       <h2>{project.title}</h2>
       <figcaption>
         {project.description}

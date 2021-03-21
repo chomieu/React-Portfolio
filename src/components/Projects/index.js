@@ -17,6 +17,7 @@ export default function Projects() {
               title
               description
               image
+              github
             }
           }
         }
