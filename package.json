@@ -46,11 +46,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-default.git"
+    "url": "git+https://github.com/chomieu/React-Portfolio.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-default#readme",
+  "homepage": "http://chomieu.github.io/React-Portfolio",
   "main": "gatsby-config.js"
 }
