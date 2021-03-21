@@ -9,7 +9,7 @@ import Projects from "../components/Projects"
 import Footer from "../components/Footer"
 import "./index.scss"
 
-const Layout = ({ children }) => {
+export default function Layout ({ children }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -37,5 +37,3 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-export default Layout

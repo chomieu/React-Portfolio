@@ -2,7 +2,7 @@ import React from "react"
 
 import "./index.scss"
 
-function Hamburger({ bun, bunToggler }) {
+export default function Hamburger({ bun, bunToggler }) {
   return (
     <div 
       role="button"
@@ -16,5 +16,3 @@ function Hamburger({ bun, bunToggler }) {
     </div>
   )
 }
-
-export default Hamburger
