@@ -5,10 +5,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Hamburger from "../Hamburger"
 import Menu from "../Menu"
-if (typeof window !== `undefined`) {
-  import Font from "react-font"
-}
 import "./index.scss"
+
+const Font = loadable.lib(() => import("react-font"))
 
 export default function Header({ siteAuthor }) {
   const [bun, setBun] = useState("")

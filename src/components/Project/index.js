@@ -1,10 +1,9 @@
 import React from "react"
 
-if (typeof window !== `undefined`) {
-  import Font from "react-font"
-}
 import { Grid } from "@material-ui/core"
 import "./index.scss"
+
+const Font = loadable.lib(() => import("react-font"))
 
 export default function Project({ project }) {
   return (
