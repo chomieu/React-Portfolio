@@ -1,10 +1,11 @@
-$width: max(640px, );
-
 .project {
+  width: 700px;
+  height: auto;
+  object-fit: scale-down;
+  
   img {
-    width: $width;
+    width: 100%;
     height: auto;
-    // border: 1px solid black;
   }
 
   h2 {
@@ -12,6 +13,6 @@ $width: max(640px, );
   }
 
   figcaption {
-    width: $width;
+    width: 100%;
   }
 }

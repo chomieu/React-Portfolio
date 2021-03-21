@@ -6,13 +6,18 @@ import "./index.scss"
 
 export default function Project({ project }) {
   return (
-    <Grid className="project" item s={12} m={6}>
+    <Grid 
+      item 
+      className="project" 
+    >
       <img
         alt={`${project.title}-preview`}
         src={project.image}
       />
-      <Font family="Oxanium" wight={600}><h2>{project.title}</h2></Font>
-      <Font family="Poppins"><figcaption>{project.description}</figcaption></Font>
+      <figcaption>
+        <Font family="Oxanium" wight={600}><h2>{project.title}</h2></Font>
+        <Font family="Poppins">{project.description}</Font>
+      </figcaption>
     </Grid>
   )
 }
