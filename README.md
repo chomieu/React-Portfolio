@@ -1,6 +1,6 @@
 # React-Portfolio
 
-Personal portfolio made with ReactJS.
+Personal portfolio built with Gatsby (React, GraphQL, Webpack, Sass).
 
 ## Table of Contents
 * [Preview](#preview)
