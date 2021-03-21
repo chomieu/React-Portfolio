@@ -1,15 +1,20 @@
 import React from 'react'
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import "./index.scss"
 
-function Menu({ drop }) {
+export default function Menu({ drop, bunToggler }) {
+
+  const goTo = () => {
+    bunToggler()
+    scrollTo(".projects")
+  }
+
   return (
     <div className="overlay" style={{ height: drop }}>
-      <a href="/Portfolio">Portfolio</a>
-      <a href="/About">About</a>
-      <a href="/Contact">Contact</a>
+      <button onClick={goTo}>Portfolio</button>
+      <button onClick={goTo}>About</button>
+      <button onClick={goTo}>Contact</button>
     </div>
   )
 }
-
-export default Menu

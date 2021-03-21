@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Intro from "../components/Intro"
-import About from "./about"
+// import About from "./about"
 import Header from "../components/Header"
 import Projects from "../components/Projects"
 import Footer from "../components/Footer"
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       <Projects>
         <main>{children}</main>
       </Projects>
-      <About />
+      {/* <About /> */}
       <Footer siteDescription={data.site.siteMetadata?.description || `Built by Chomie`}/>
     </>
   )

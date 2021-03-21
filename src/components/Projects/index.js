@@ -29,9 +29,9 @@ export default function Projects() {
       <SEO title="Projects" />
       <Grid 
         container
-        spacing={10} 
         justify="center"
-        className="projects">
+        className="projects"
+      >
         {site.siteMetadata.projects.map(item => <Project project={item} />)}
       </Grid>
     </>

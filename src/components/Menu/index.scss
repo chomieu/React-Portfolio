@@ -13,16 +13,16 @@
   justify-content: center;
   align-items: center;
   
-  a {
+  button {
     padding: 2vw;
-    text-decoration: none;
-    font: bold clamp(20px, 7vw, 70px) "Times New Roman";
     color: #818181;
-    display: block;
+    border: none;
+    background-color: transparent;
     transition: 0.3s;
+    font: bold clamp(20px, 7vw, 70px) "Times New Roman";
   }
 
-  a:hover, a:focus {
+  button:hover, button:focus {
     color: #f1f1f1;
   }
 
