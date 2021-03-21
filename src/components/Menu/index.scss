@@ -19,7 +19,9 @@
     border: none;
     background-color: transparent;
     transition: 0.3s;
-    font: bold clamp(20px, 7vw, 70px) "Times New Roman";
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(20px, 7vw, 70px);
+    font-weight: bold;
   }
 
   button:hover, button:focus {

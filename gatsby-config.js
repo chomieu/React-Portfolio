@@ -61,6 +61,23 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Oxanium",
+              variants: ["400", "600"],
+            },
+            {
+              family: "Poppins",
+              variants: ["400"],
+            },
+          ],
+        },
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {

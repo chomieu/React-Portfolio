@@ -3,6 +3,12 @@ header {
   top: 0;
   width: 100%;
 
+  nav {
+    padding: 1.45rem 2vw;
+    display: "flex";
+    justify-content: "space-between";
+  }
+
   .logo {
     width: 30px;
   }

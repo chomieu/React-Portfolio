@@ -4,10 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background:
-  //   radial-gradient(farthest-side, rgb(238, 130, 238) 96%,transparent) 10vw 10vw/33vw 33vw,
-  //   radial-gradient(farthest-side, rgb(238, 130, 238) 96%,transparent) top right/33vw 33vw;
-  // background-repeat: no-repeat;
 
   .cartoonIcon {
     background-color: black;
@@ -19,7 +15,8 @@
   
   .Typewriter {
     margin: 2vw auto;
-    font: clamp(20px, 7vw, 45px) "Times New Roman";
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(20px, 7vw, 45px);
     line-height: 1.5;
     text-align: center;
     width: 95%;
@@ -39,6 +36,8 @@
 
   button {
     opacity: 0;
+    font-family: 'Oxanium', cursive;
+    font-weight: 400;
     text-transform: capitalize;
     animation: appear 1s linear forwards;
     animation-delay: 4.5s;

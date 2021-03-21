@@ -3,12 +3,9 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import loadable from '@loadable/component'
 import Hamburger from "../Hamburger"
 import Menu from "../Menu"
 import "./index.scss"
-
-const Font = loadable.lib(() => import("react-font"))
 
 export default function Header({ siteAuthor }) {
   const [bun, setBun] = useState("")
@@ -22,22 +19,15 @@ export default function Header({ siteAuthor }) {
   return (
     <header>
       <Menu drop={drop} bunToggler={bunToggler} />
-      <nav style={{
-        padding: `1.45rem 2vw`,
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-      >
-        <Font family="Oxanium" weight={600}>
-          <Link to="/">
-            <StaticImage
+      <nav>
+        <Link to="/">
+          <StaticImage
             alt="cu-logo"
             className="logo"
             src="../../images/cu-logo.png"
             placeholder="blurred"
-            />
-          </Link>
-        </Font>
+          />
+        </Link>
         <Hamburger bun={bun} bunToggler={bunToggler} />
       </nav>
     </header>
