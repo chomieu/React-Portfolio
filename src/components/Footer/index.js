@@ -1,13 +1,29 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+
+import "./index.scss"
 
 export default function Footer({ siteDescription }) {
   return (
-    <footer style={{ borderTop: "1px solid black" }}>
-      <div style={{
-        padding: `1.45rem 1.0875rem`,
-      }}
-      >
-        © {new Date().getFullYear()}, {siteDescription}
+    <footer class="footer">
+      <span>© {new Date().getFullYear()},
+        <a href="https://www.gatsbyjs.com/">{siteDescription}</a>
+      </span> 
+      <div>
+        <StaticImage
+          alt="github-icon"
+          className="footer__icon"
+          src="../../images/github.png"
+          placeholder="blurred"
+        />
+        <a href="https://github.com/chomieu">GitHub</a>
+        <StaticImage
+          alt="linkedin-icon"
+          className="footer__icon"
+          src="../../images/linkedin.png"
+          placeholder="blurred"
+        />
+        <a href="https://www.linkedin.com/in/chomieu/">LinkedIn</a>
       </div>
     </footer>
   )

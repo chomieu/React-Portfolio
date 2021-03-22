@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Intro from "../components/Intro"
 // import About from "../components/About"
+import Contact from "../components/Contact"
 import Header from "../components/Header"
 import Projects from "../components/Projects"
 import Footer from "../components/Footer"
@@ -29,6 +30,7 @@ export default function Layout ({ children }) {
         <main>{children}</main>
       </Projects>
       {/* <About /> */}
+      <Contact />
       <Footer siteDescription={data.site.siteMetadata?.description || `Built by Chomie`}/>
     </>
   )
