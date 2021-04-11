@@ -14,7 +14,7 @@ export default function Menu({ drop, bunToggler }) {
   return (
     <div className="overlay" style={{ height: drop }}>
       <button onClick={goTo}>Projects</button>
-      <button onClick={goTo}>About</button>
+      {/* <button onClick={goTo}>About</button> */}
       <button onClick={goTo}>Contact</button>
     </div>
   )
