@@ -1,18 +1,28 @@
 .footer {
   background-color: #f4f4f4;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.45rem 1vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   &__icon {
     width: 20px;
-    margin-left: 1.5rem;
+    margin-left: 1.5vw;
     vertical-align: text-bottom;
   }
 
   a {
     margin-left: 0.5rem;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  @media (max-width: 400px) {
+    .social {
+      flex-direction: column;
+    }
   }
 
 }

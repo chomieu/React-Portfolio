@@ -52,9 +52,9 @@ module.exports = {
       },
       {
         title: 'Amazon Copy',
-        description: '[Release Date 3/26] Website that looks and functions like Amazon.com',
+        description: '[In Progress] Website that looks and functions like Amazon.com',
         image: `./amazon.png`,
-        github: '',
+        github: 'https://github.com/chomieu/Amazon-Copy',
         link: '',
       },
     ],

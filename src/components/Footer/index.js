@@ -9,7 +9,8 @@ export default function Footer({ siteDescription }) {
       <span>© {new Date().getFullYear()},
         <a href="https://www.gatsbyjs.com/">{siteDescription}</a>
       </span> 
-      <div>
+      <div class="social">
+        <div>
         <StaticImage
           alt="github-icon"
           className="footer__icon"
@@ -17,6 +18,8 @@ export default function Footer({ siteDescription }) {
           placeholder="blurred"
         />
         <a href="https://github.com/chomieu">GitHub</a>
+        </div>
+        <div>
         <StaticImage
           alt="linkedin-icon"
           className="footer__icon"
@@ -24,6 +27,7 @@ export default function Footer({ siteDescription }) {
           placeholder="blurred"
         />
         <a href="https://www.linkedin.com/in/chomieu/">LinkedIn</a>
+        </div>
       </div>
     </footer>
   )
